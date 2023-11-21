@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- Cabeçalho principal, presente em todas as páginas-->
+    <header>
+        <img src="imagens/logo.png" alt="logo do site LifeTrack Pro">
+        <h1>LifeTrack Pro</h1>
+    </header>
+
+    <!--Menu de naveção, com links para todas as páginas-->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a id="currently-active-tab" href="items.html">Items</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </nav>
+
+
+    <main>
+        <section class="container">
+            <h1>Lista de Especialistas</h1>
+    
+            <!-- Campo de busca -->
+            <input type="text" id="searchInput" placeholder="Buscar item..." onkeyup="searchItems()">
+
+            <section class="itens">
+                <!-- Lista de itens -->
+                <div class="img" data-search="Psiquiatra">
+                    <img src="imagens/medico-1.png" alt="imagem1">
+                    <div class="info">
+                        <h5>Psiquiatras</h5>
+                        <p>Dra. Isabela Mendes</p>
+                        <p>Dr. Rodrigo Costa</p>
+                        <p>Dra. Mariana Ramos</p>
+                    </div>
+                </div>
+
+                <div class="img" data-search="Nutricionista">
+                    <img src="imagens/medico-2.png" alt="imagem2">
+                    <div class="info">
+                        <h5>Nutricionistas</h5>
+                        <p>Dr. André Santos</p>
+                        <p>Dra. Carolina Ferreira</p>
+                        <p>Dr. Luís Oliveira</p>
+                    </div>
+                </div>
+
+                <div class="img" data-search="Assistentes Sociais">
+                    <img src="imagens/medico-3.png" alt="imagem2">
+                    <div class="info">
+                        <h5>Assistentes Sociais</h5>
+                        <p>Dra. Sofia Pereira</p>
+                        <p>Dr. Felipe Cardoso</p>
+                        <p>Dra. Camila Silva</p>
+                    </div>
+                </div>
+
+                <div class="img" data-search="Cardiologista">
+                    <img src="imagens/medico-4.png" alt="imagem2">
+                    <div class="info">
+                        <h5>Cardiologistas</h5>
+                        <p>Dr. Gustavo Rodrigues</p>
+                        <p>Dra. Laura Almeida</p>
+                        <p>Dr. Pedro Fernandes</p>
+                    </div>
+                </div>
+
+                <div class="img" data-search="Enfermeiros">
+                    <img src="imagens/medico-5.png" alt="imagem2">
+                    <div class="info">
+                        <h5>Enfermeiros</h5>
+                        <p>Dra. Rafaela Vieira</p>
+                        <p>Dra. Helena Ribeiro</p>
+                        <p>Dr. Lucas Miranda</p>
+                    </div>
+                </div>
+
+                <div class="img" data-search="Terapeutas">
+                    <img src="imagens/medico-6.png" alt="imagem2">
+                    <div class="info">
+                        <h5>Terapeutas</h5>
+                        <p>Dr. André Moreira</p>
+                        <p>Dra. Beatriz Nunes</p>
+                        <p>Dr. Renato Santos</p>
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!--Rodapé-->
+    <footer class="footer-longo">
+        © Copyright 2023. All rights reserved.
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

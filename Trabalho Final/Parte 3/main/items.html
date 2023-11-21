@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Experts</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-
+      4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="logo do site LifeTrack Pro">
+        <h1>LifeTrack Pro</h1>
+    </header>
+
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <a class="navbar-brand" href="about.html">About</a>
+        <a class="navbar-brand" id="currently-active-tab" href="items.html">Lista de Especialistas</a>
+        <a class="navbar-brand" href="register.php">Registro de Consulta</a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/TrabalhoFinal/restrito/login.php">Área do Médico</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <main>
+        <section class="container">
+            <h1>Lista de Especialistas</h1>
+    
+            <input type="text" id="searchInput" placeholder="Buscar item..." onkeyup="searchItems()">
+
+            <section class="itens">
+                <div class="img" data-search="Psiquiatra">
+                    <img src="imagens/medico-1.png" alt="imagem1">
+                    <div class="info">
+                        <h5>Psiquiatras</h5>
+                        <p>Dra. Isabela Mendes</p>
+                        <p>Dr. Rodrigo Costa</p>
+                        <p>Dra. Mariana Ramos</p>
+                    </div>
+                </div>
+
+                <div class="img" data-search="Nutricionista">
+                    <img src="imagens/medico-2.png" alt="imagem2">
+                    <div class="info">
+                        <h5>Nutricionistas</h5>
+                        <p>Dr. André Santos</p>
+                        <p>Dra. Carolina Ferreira</p>
+                        <p>Dr. Luís Oliveira</p>
+                    </div>
+                </div>
+
+                <div class="img" data-search="Assistentes Sociais">
+                    <img src="imagens/medico-3.png" alt="imagem2">
+                    <div class="info">
+                        <h5>Assistentes Sociais</h5>
+                        <p>Dra. Sofia Pereira</p>
+                        <p>Dr. Felipe Cardoso</p>
+                        <p>Dra. Camila Silva</p>
+                    </div>
+                </div>
+
+                <div class="img" data-search="Cardiologista">
+                    <img src="imagens/medico-4.png" alt="imagem2">
+                    <div class="info">
+                        <h5>Cardiologistas</h5>
+                        <p>Dr. Gustavo Rodrigues</p>
+                        <p>Dra. Laura Almeida</p>
+                        <p>Dr. Pedro Fernandes</p>
+                    </div>
+                </div>
+
+                <div class="img" data-search="Enfermeiros">
+                    <img src="imagens/medico-5.png" alt="imagem2">
+                    <div class="info">
+                        <h5>Enfermeiros</h5>
+                        <p>Dra. Rafaela Vieira</p>
+                        <p>Dra. Helena Ribeiro</p>
+                        <p>Dr. Lucas Miranda</p>
+                    </div>
+                </div>
+
+                <div class="img" data-search="Trapeutas">
+                    <img src="imagens/medico-6.png" alt="imagem2">
+                    <div class="info">
+                        <h5>Terapeutas</h5>
+                        <p>Dr. André Moreira</p>
+                        <p>Dra. Beatriz Nunes</p>
+                        <p>Dr. Renato Santos</p>
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer class="footer-longo">
+        © Copyright 2023. All rights reserved.
+    </footer>
+
+    <script>
+        function searchItems() {
+            var input, filter, items, item, info, i, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            items = document.getElementsByClassName("img");
+        
+            for (i = 0; i < items.length; i++) {
+                item = items[i];
+                info = item.getElementsByClassName("info")[0];
+                txtValue = info.textContent || info.innerText;
+        
+                // If the searched text is found, display the item; otherwise, hide it
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    item.style.display = "";
+                } else {
+                    item.style.display = "none";
+                }
+            }
+        }
+        </script>
+
+</body>
+</html>

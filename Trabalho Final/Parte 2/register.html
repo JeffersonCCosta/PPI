@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css">
+
+      <!-- BOOTSTRAP -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-
+      4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous">
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Cabeçalho principal, presente em todas as páginas-->
+    <header>
+        <img src="imagens/logo.png" alt="logo do site LifeTrack Pro">
+        <h1>LifeTrack Pro</h1>
+    </header>
+
+    <!--Menu de naveção, com links para todas as páginas-->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="items.html">Items</a>
+        <a href="login.html">Login</a>
+        <a id="currently-active-tab" href="register.html">Register</a>
+        <link rel="stylesheet" href="css/style.css">
+
+    </nav>
+
+    <div class="container">
+        <main>
+            <h1>Cadastro de Clientes</h1>
+
+            <form>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="" required>
+                    <label for="text">Nome</label>
+                </div>
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="idade" name="idade" placeholder="" required>
+                    <label for="number">Idade</label>
+                </div>
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="sus" name="sus" placeholder="" required>
+                    <label for="number">Nº SUS</label>
+                </div>
+                  
+                <div>
+                    <label for="genero">Gênero:</label>
+                    <select id="option" name="genero">
+
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+               
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="objetivo" name="objetivo" rows="4" placeholder="">
+                    <label for="objetivo">Objetivos de Saúde</label>
+                </div>
+                
+                <br>
+                
+                <div>
+                    <label for="exercicio">Faz exercício regularmente?</label>
+                    <input type="radio" id="exercicio-sim" name="exercicio" value="sim">
+                    <label for="exercicio-sim">Sim</label>
+                    <input type="radio" id="exercicio-nao" name="exercicio" value="nao">
+                    <label for="exercicio-nao">Não</label>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="alimentacao">Hábitos de Alimentação:</label>
+                    <input type="radio" id="alimentacao-saudavel" name="alimentacao[]" value="saudavel">
+                    <label for="alimentacao-saudavel">Alimentação Saudável</label>
+                    <input type="radio" id="alimentacao-vegetariana" name="alimentacao[]" value="vegetariana">
+                    <label for="alimentacao-vegetariana">Dieta Vegetariana</label>
+                    <input type="radio" id="alimentacao-vegana" name="alimentacao[]" value="vegana">
+                    <label for="alimentacao-vegana">Dieta Vegana</label>
+                </div>
+
+                <br>
+
+                <div class="form-floating">
+                <input type="text" class="form-control" id="dieta-especifica" name="dieta-especifica" placeholder="">
+                <label for="dieta-especifica">Você segue alguma dieta específica? (paleo, cetogênica, etc.)</label>
+                </div>
+
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="refeicoes-diarias" name="refeicoes-diarias" placeholder="">
+                    <label for="refeicoes-diarias">Quantas refeições você faz por dia?</label>
+                </div>
+
+                <div>
+                    <label for="alimentos-processados">Com que frequência você consome alimentos processados?</label>
+                    <select id="option" name="alimentos-processados">
+                        <option value="nunca">Nunca</option>
+                        <option value="raramente">Raramente</option>
+                        <option value="às vezes">Às vezes</option>
+                        <option value="frequentemente">Frequentemente</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="consumo-alcool">Você consome bebidas alcoólicas regularmente?</label>
+                    <input type="radio" id="consumo-alcool-sim" name="consumo-alcool" value="sim">
+                    <label for="consumo-alcool-sim">Sim</label>
+                    <input type="radio" id="consumo-alcool-nao" name="consumo-alcool" value="nao">
+                    <label for="consumo-alcool-nao">Não</label>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="tabagismo">Você fuma?</label>
+                    <input type="radio" id="tabagismo-sim" name="tabagismo" value="sim">
+                    <label for="tabagismo-sim">Sim</label>
+                    <input type="radio" id="tabagismo-nao" name="tabagismo" value="nao">
+                    <label for="tabagismo-nao">Não</label>
+                </div>
+
+                <div class="submit">
+                    <button type="submit">Cadastrar</button>
+                </div>
+
+            </form>
+        </main>
+    </div>
+
+
+
+    <!--Rodapé-->
+    <footer class="footer-longo">
+        © Copyright 2023. All rights reserved.
+    </footer>
+</body>
+</html>
