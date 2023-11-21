@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <nav  class="imagen-logo">
+        <div>
+            <a href="index.html">
+                <img src="imagens/logo.jpg" alt="Logo" height="40">
+            </a>
+        </div>
+    </nav>
+    
+    <nav  class="barra-menu">
+        <div>
+            <ul>
+                <li>
+                    <a href="index.html">Página inicial</a>
+                </li>
+                <li>
+                    <a href="cadastroanimal.html">Cadastrar</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container mt-5">
+            <h1>Cadastro de Animal</h1>
+            <form id="cadastro-form">
+                <div class="mb-3">
+                    <label for="raca" class="form-label">Raça</label>
+                    <input type="text" class="form-control" id="raca" maxlength="35">
+                </div>
+                <div class="mb-3">
+                    <label for="especie" class="form-label">Espécie</label>
+                    <select class="form-select" id="especie">
+                        <option value="Cachorro">Cachorro</option>
+                        <option value="Gato">Gato</option>
+                        <option value="Pássaro">Pássaro</option>
+                        <option value="Peixe">Peixe</option>
+                        <option value="Outra">Outra</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="cor" class="form-label">Cor</label>
+                    <input type="text" class="form-control" id="cor">
+                </div>
+                <div class="mb-3">
+                    <label for="idade" class="form-label">Idade</label>
+                    <input type="number" class="form-control" id="idade">
+                </div>
+                <div class="mb-3">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="filhote">
+                        <label class="form-check-label" for="filhote">Filhote</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="preco" class="form-label">Preço</label>
+                    <input type="number" class="form-control" id="preco">
+                </div>
+                <div class="mb-3">
+                    <label for="descricao" class="form-label">Descrição</label>
+                    <textarea class="form-control" id="descricao" rows="6"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" id="cadastrar-btn">Cadastrar</button>
+            </form>
+            <div id="validation-message" class="alert alert-danger mt-3" style="display: none;"></div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+    <footer class="rodape-cadastro">
+        <p>Avaliação prática 1 - PPI - Jefferson Cristino da Costa</p>
+    </footer>
+</body>
+</html>
