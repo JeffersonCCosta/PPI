@@ -1,0 +1,44 @@
+body {
+    background-color: #d4d4d4;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 8% auto auto;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.empty {
+    background-color: #ffff;
+}
+
+.button-container {
+    text-align: center;
+}
+
+button {
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#aviso {
+    text-align: center;
+}
+
+.jogador1 {
+    background-color: #FF4500;
+    /* Cor para o jogador 1 */
+}
+
+.jogador2 {
+    background-color: #0000CD;
+    /* Cor para o jogador 1 */
+}
